@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Dashboard</title>
+  <!-- Bootstrap core CSS-->
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="css/menu-sidebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid nopadding">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <nav class="navbar navbar-inverse navbar-fixed-top"
+      id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">Inicio</a>
+        </li>
+        <li><a href="views/hernandez.html">David Hernández</a></li>
+        <li><a href="views/mercado.html">Alex Mercado</a></li>
+        <li><a href="views/nolasco.html">Vladimir Nolasco</a></li>      
+      </ul>
+    </nav>
+
+    <section id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+
+      <article class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/logo.png" class="adaptar img-fluid">
+          </div>
+          <div class="col-md-7">
+            <h2 class="section-heading">Agencia creativa TRIPODE STUDIO.</h2>
+            <br>
+            <p class="text1">Tripode Studio es una microagencia creativa que apunta y dispara con los mejores talentos en Diseño gráfico, editorial, publicitario, packaging, corporativo, multimedia, señalética… Profesionales en cualquiera de los campos para que la comunicación visual de tu empresa sea coherente, atractiva y profesional.</p>
+            <br>
+            <p class="text2">Preparamos no sólo los diseños, sino también las artes finales para imprenta. Supervisamos la calidad del producto final para asegurar la correcta producción gráfica que necesitas.</p>
+            <br>
+
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+           <div class="card text-center">
+            <img class="adaptar img-fluid" src="img/img1.png">
+            <div class="card-body">
+              <h4 class="section-heading">David Hernández</h4>
+              <h6 class="text-muted">Ilustrador y diseñador</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#">Conocer mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card text-center">
+          <img class="adaptar img-fluid" src="img/img2.png">
+          <div class="card-body">
+            <h4 class="section-heading">Alex Mercado</h4>
+            <h6 class="text-muted">Diseñador y diseño web</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">Conocer mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="card text-center">
+        <img class="adaptar img-fluid" src="img/img3.png">
+        <div class="card-body">
+          <h4 class="section-heading">Vladimir Nolasco</h4>
+          <h6 class="text-muted">Diseñador y fotografo</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+        </div>
+        <div class="card-footer">
+          <a href="views/nolasco.html">Conocer mas</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+<br>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  </div>
+</footer>
+</section>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="js/jquery/jquery-1.12.4.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var trigger = $('.hamburger'),
+    overlay = $('.overlay'),
+    isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+      $('#wrapper').toggleClass('toggled');
+    });  
+  });
+</script> 
+</div>
+</body>
+
+</html>
